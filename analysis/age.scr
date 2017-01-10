@@ -1,0 +1,1 @@
+dm "if s1 != 'XXX' then INPUT else KILL" < participant-map.txt | dm 100-x10+16 |stats

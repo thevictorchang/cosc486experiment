@@ -1,0 +1,13 @@
+To run the analyses:
+
+% pwd
+/Users/philip/Documents/Research/prospect-theory/experiments/peak-end/analysis
+
+Run this once to process the logs:
+% ./parse_peak-end.py ../run-logs/*.txt > peak-end
+
+Run these to do the analyses:
+% ./analyse_peak-end.R peak-end
+% ./analyse_pref-ranks.R peak-end
+
+You might need to install some packages, but I assume you're a master at R now.

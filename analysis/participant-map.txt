@@ -1,0 +1,81 @@
+-rw-rw-rw- 1 nbl24  guest 3148202 May 17 10:19 subject-10.txt	97
+-rw-rw-rw- 1 kki43  guest 3394327 May 17 10:18 subject-11.txt	98
+-rw-rw-rw- 1 ewi32  guest 2889221 May 17 10:17 subject-12.txt	97	F
+-rw-rw-rw- 1 mgo80  guest 3181405 May 17 10:20 subject-13.txt	72
+-rw-rw-rw- 1 cll62  guest 2644256 May 17 10:18 subject-14.txt 	97
+-rw-rw-rw- 1 dno22  guest 3302428 May 17 10:19 subject-15.txt	97	F
+-rw-rw-rw- 1 jwe73  guest 3245235 May 17 10:20 subject-16.txt	97	F
+-rw-rw-rw- 1 amc384 guest 3433342 May 17 16:16 subject-17.txt	98
+-rw-rw-rw- 1 rsh127 guest 2861972 May 17 16:15 subject-18.txt	98
+-rw-rw-rw- 1 hli60  guest 2996722 May 17 16:15 subject-19.txt	87
+-rw-rw-rw- 1 tmo64  guest 3522862 May 17 10:18 subject-1.txt	97
+-rw-rw-rw- 1 msu69  guest 3125471 May 17 16:17 subject-20.txt	97
+-rw-rw-rw- 1 nja94  guest 3874116 May 17 16:17 subject-21.txt   97
+-rw-rw-rw- 1 rpa97  guest 3420183 May 17 16:19 subject-22.txt 	98
+-rw-rw-rw- 1 dca87  guest 4252545 May 17 16:18 subject-23.txt	97
+-rw-rw-rw- 1 ntb24  guest 3516307 May 17 16:17 subject-24.txt	97
+-rw-rw-rw- 1 jyu28  guest 4075189 May 17 16:19 subject-25.txt	91
+-rw-rw-rw- 1 acb116 guest 3364913 May 17 16:19 subject-26.txt	97
+-rw-rw-rw- 1 mam303 guest 5479664 May 17 16:22 subject-27.txt	97
+XXX -rw-rw-rw- 1 dwa94  guest 1879571 May 17 16:14 subject-28.txt
+-rw-rw-rw- 1 pcr46  guest 3927162 May 17 16:19 subject-29.txt	88 	F
+-rw-rw-rw- 1 esy14  guest 3873234 May 17 10:18 subject-2.txt	94	F
+-rw-rw-rw- 1 asp76  guest 3457981 May 17 16:17 subject-30.txt	97
+-rw-rw-rw- 1 ero45  guest 4099321 May 17 16:21 subject-31.txt	97
+-rw-rw-rw- 1 mmu79  guest 2845513 May 17 16:17 subject-32.txt	98
+-rw-rw-rw- 1 jli231 guest 3895643 May 17 16:19 subject-33.txt	92
+-rw-rw-rw- 1 jha236 guest 2995571 May 17 16:17 subject-34.txt	97	F
+XXX -rw-rw-rw- 1 nsa73  guest 3123544 May 17 16:17 subject-35.txt
+-rw-rw-rw- 1 mpa588 guest 2923891 May 17 16:17 subject-36.txt	97	F
+-rw-rw-rw- 1 swo49  guest 4402834 May 17 16:21 subject-37.txt	97
+XXX -rw-rw-rw- 1 hzh99  guest 1338738 May 17 16:13 subject-38.txt	95
+XXX -rw-rw-rw- 1 yyu51  guest 3642466 May 17 16:19 subject-39.txt	
+-rw-rw-rw- 1 dpi32  guest 3802329 May 17 10:19 subject-3.txt	97
+-rw-rw-rw- 1 wtr24  guest 3720663 May 17 16:19 subject-40.txt	97
+-rw-rw-rw- 1 bsc45  guest 3497939 May 17 16:20 subject-41.txt	98
+-rw-rw-rw- 1 jrc149 guest 2946624 May 17 16:28 subject-42.txt	97
+-rw-rw-rw- 1 nsy16  guest 2843128 May 18 14:16 subject-43.txt	84
+-rw-rw-rw- 1 ron13  guest 2780066 May 18 14:16 subject-44.txt	98
+-rw-rw-rw- 1 cij11  guest 3128349 May 18 14:16 subject-45.txt	85
+-rw-rw-rw- 1 kel50  guest 2543848 May 18 14:16 subject-46.txt	97
+-rw-rw-rw- 1 elo30  guest 2946016 May 18 14:15 subject-47.txt	97
+-rw-rw-rw- 1 sgo68  guest 2543765 May 18 14:15 subject-48.txt	97	F
+XXX -rw-rw-rw- 1 dfe31  guest 2087249 May 18 14:13 subject-49.txt
+-rw-rw-rw- 1 jwk52  guest 2385131 May 17 10:17 subject-4.txt	93
+-rw-rw-rw- 1 jda124 guest 2555453 May 18 14:17 subject-50.txt	98
+-rw-rw-rw- 1 jbo62  guest 3388125 May 18 14:17 subject-51.txt	98
+-rw-rw-rw- 1 gha68  guest 3872781 May 18 14:18 subject-52.txt	98
+-rw-rw-rw- 1 esk18  guest 3745917 May 18 14:18 subject-53.txt	97
+-rw-rw-rw- 1 ahe85  guest 3116817 May 18 14:17 subject-54.txt	97
+-rw-rw-rw- 1 jfo56  guest 3857582 May 18 14:21 subject-55.txt	96
+-rw-rw-rw- 1 mas284 guest 3498015 May 18 14:17 subject-56.txt	98
+-rw-rw-rw- 1 jsm178 guest 3428090 May 18 14:19 subject-57.txt	96
+-rw-rw-rw- 1 aka130 guest 3489938 May 18 14:19 subject-58.txt	97	F
+-rw-rw-rw- 1 tke34  guest 3659495 May 19 14:19 subject-59.txt	97
+-rw-rw-rw- 1 rco61  guest 2757400 May 17 10:20 subject-5.txt	97	F
+-rw-rw-rw- 1 jhh67  guest 2422454 May 19 14:17 subject-60.txt	96
+-rw-rw-rw- 1 spr86  guest 3465436 May 19 14:23 subject-61.txt	95
+-rw-rw-rw- 1 jga99  guest 2833525 May 19 14:18 subject-62.txt	96
+-rw-rw-rw- 1 rma206 guest 3230912 May 19 14:20 subject-63.txt	97
+-rw-rw-rw- 1 rba104 guest 3761262 May 19 14:21 subject-64.txt	97
+XXX -rw-rw-rw- 1 jrg97  guest 2970130 May 19 14:19 subject-65.txt
+-rw-rw-rw- 1 xyl20  guest 2592063 May 19 14:19 subject-66.txt	94	F
+-rw-rw-rw- 1 ami80  guest 2912831 May 19 14:19 subject-67.txt	89
+XXX -rw-rw-rw- 1 gto25  guest       0 May 19 14:23 subject-68.txt
+-rw-rw-rw- 1 jmc537 guest 4169748 May 19 14:23 subject-69.txt	97
+-rw-rw-rw- 1 nro51  guest 2820230 May 17 10:18 subject-6.txt	98
+-rw-rw-rw- 1 hma92  guest 3042099 May 19 14:20 subject-70.txt	97
+XXX -rw-rw-rw- 1 toc13  guest  676935 May 23 12:13 subject-71.txt
+-rw-rw-rw- 1 csh72  guest 2879943 May 23 12:15 subject-72.txt	97
+-rw-rw-rw- 1 jto59  guest 3583356 May 23 12:16 subject-73.txt	97
+-rw-rw-rw- 1 acl111 guest 3056342 May 23 12:16 subject-74.txt	96
+-rw-rw-rw- 1 mwi92  guest 1675265 May 23 12:12 subject-75.txt	98
+-rw-rw-rw- 1 mme88  guest 3307376 May 23 12:18 subject-76.txt	97
+-rw-rw-rw- 1 fmc63  guest 4076782 May 23 12:23 subject-77.txt	98
+-rw-rw-rw- 1 gev19  guest 3136800 May 23 12:18 subject-78.txt	97
+-rw-rw-rw- 1 mjo121 guest 4047492 May 23 12:20 subject-79.txt	98
+-rw-rw-rw- 1 jhl80  guest 4509059 May 17 10:20 subject-7.txt	98
+-rw-rw-rw- 1 dde37  guest 2743793 May 17 10:17 subject-8.txt	98
+-rw-rw-rw- 1 rri26  guest 2915629 May 23 12:17 subject-80.txt	98
+-rw-rw-rw- 1 nla55  guest 4035610 May 23 12:19 subject-81.txt	97	F
+-rw-rw-rw- 1 nbi21  guest 2759586 May 17 10:19 subject-9.txt	98
