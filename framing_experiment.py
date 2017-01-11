@@ -19,20 +19,20 @@ NEUTRAL_RESOLUTION = 4
 PRACTICE_CONDITIONS = [
   # Neutral
   TaskConfiguration(NEUTRAL_RESOLUTION, (100, 100), (500, 500), ('PRACN',)),
-  #TaskConfiguration(NEUTRAL_RESOLUTION, (750, 200), (200, 500), ('PRACN',)),
-  #TaskConfiguration(NEUTRAL_RESOLUTION, (800, 600), (100, 100), ('PRACN',)),
+  TaskConfiguration(NEUTRAL_RESOLUTION, (750, 200), (200, 500), ('PRACN',)),
+  TaskConfiguration(NEUTRAL_RESOLUTION, (800, 600), (100, 100), ('PRACN',)),
   # Helpful
-  # TaskConfiguration(50, (250, 300), (600, 500), ('PRACP',)),
-  # TaskConfiguration(100, (1200, 200), (200, 100), ('PRACP',)),
-  # TaskConfiguration(200, (800, 600), (200, 400), ('PRACP',)),
-  # # Mostly helpful
-  # TaskConfiguration(50, (100, 100), (512, 512), ('PRACS',)),
-  # TaskConfiguration(100, (600, 200), (612, 312), ('PRACS',)),
-  # TaskConfiguration(50, (800, 600), (312, 112), ('PRACS',)),
-  # # Unhelpful
-  # TaskConfiguration(50, (527, 527), (528, 528), ('PRACH',)),
-  # TaskConfiguration(200, (690, 690), (700, 700), ('PRACH',)),
-  # TaskConfiguration(100, (454, 624), (452, 652), ('PRACH',)),
+  TaskConfiguration(50, (250, 300), (600, 500), ('PRACP',)),
+  TaskConfiguration(100, (1200, 200), (200, 100), ('PRACP',)),
+  TaskConfiguration(200, (800, 600), (200, 400), ('PRACP',)),
+  # Mostly helpful
+  TaskConfiguration(50, (100, 100), (512, 512), ('PRACS',)),
+  TaskConfiguration(100, (600, 200), (612, 312), ('PRACS',)),
+  TaskConfiguration(50, (800, 600), (312, 112), ('PRACS',)),
+  # Unhelpful
+  TaskConfiguration(50, (527, 527), (528, 528), ('PRACH',)),
+  TaskConfiguration(200, (690, 690), (700, 700), ('PRACH',)),
+  TaskConfiguration(100, (454, 624), (452, 652), ('PRACH',)),
 ]
 
 # Format:
@@ -59,7 +59,7 @@ EXPERIMENTAL_CONDITIONS_2 = [
  ('6C+4N+6C -StartMid_A', '4N+12C -StartMid_B'),  # -Start vs. -Mid
 ]
 
-#implement condition generation
+
 
 
 
