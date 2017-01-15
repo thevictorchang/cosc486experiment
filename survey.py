@@ -81,11 +81,9 @@ class OnOrOffFrame(tk.Frame):
 
     framing_question = ""
     if (subject_id % 2 == 0):
-        framing_question = "(SUBJECT ID is EVEN so this will be a POSITIVELY FRAMED question) \n" \
-                           "If you were to repeat this set of exercises, would you have the Grid\n Snapping feature turned on?"
+        framing_question = "Would you like the Grid Snapping feature enabled?"
     else:
-        framing_question = "(SUBJECT ID is ODD so this will be a NEGATIVELY FRAMED question) \n" \
-                            "If you were to repeat this set of exercises, would you have the Grid Snapping feature turned off?"
+        framing_question = "Would you like the Grid Snapping feature disabled?"
 
 
     tk.Label(self,
@@ -142,8 +140,11 @@ class OnOrOffFrame(tk.Frame):
 
 
   def _continue_clicked(self):
-    print('PREFERENCE' + str(self._pos_neg.get()))
-    self._logger.WriteLine('PREFERENCE', self._pos_neg.get())
+    #print('PREFERENCE' + str(self._pos_neg.get()))
+    if (self._pos_neg.get == 0):
+      self._logger.WriteLine('PREFERENCE', 'ON')
+    else:
+        self._logger.WriteLine('PREFERENCE', 'OFF')
     self._continue_callback()
 
 
@@ -197,5 +198,8 @@ class InterRatingFrame(tk.Frame):
     self._next.config(state=tk.NORMAL)
 
   def _continue_clicked(self):
-    self._logger.WriteLine('PREFERENCE', self._pos_neg.get())
+    if (self._pos_neg.get == 0):
+      self._logger.WriteLine('PREFERENCE', 'ON')
+    else:
+        self._logger.WriteLine('PREFERENCE', 'OFF')
     self._continue_callback()

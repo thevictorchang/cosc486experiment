@@ -18,20 +18,20 @@ NEUTRAL_RESOLUTION = 4
 
 PRACTICE_CONDITIONS = [
   # Neutral
-  TaskConfiguration(NEUTRAL_RESOLUTION, (100, 100), (500, 500), ('PRACN',)),
-  TaskConfiguration(NEUTRAL_RESOLUTION, (750, 200), (200, 500), ('PRACN',)),
-  TaskConfiguration(NEUTRAL_RESOLUTION, (800, 600), (100, 100), ('PRACN',)),
-  # Helpful
-  TaskConfiguration(50, (250, 300), (600, 500), ('PRACP',)),
-  TaskConfiguration(100, (1200, 200), (200, 100), ('PRACP',)),
-  TaskConfiguration(200, (800, 600), (200, 400), ('PRACP',)),
-  # Mostly helpful
-  TaskConfiguration(50, (100, 100), (512, 512), ('PRACS',)),
-  TaskConfiguration(100, (600, 200), (612, 312), ('PRACS',)),
-  TaskConfiguration(50, (800, 600), (312, 112), ('PRACS',)),
-  # Unhelpful
-  TaskConfiguration(50, (527, 527), (528, 528), ('PRACH',)),
-  TaskConfiguration(200, (690, 690), (700, 700), ('PRACH',)),
+  # TaskConfiguration(NEUTRAL_RESOLUTION, (100, 100), (500, 500), ('PRACN',)),
+  # TaskConfiguration(NEUTRAL_RESOLUTION, (750, 200), (200, 500), ('PRACN',)),
+  # TaskConfiguration(NEUTRAL_RESOLUTION, (800, 600), (100, 100), ('PRACN',)),
+  # # Helpful
+  # TaskConfiguration(50, (250, 300), (600, 500), ('PRACP',)),
+  # TaskConfiguration(100, (1200, 200), (200, 100), ('PRACP',)),
+  # TaskConfiguration(200, (800, 600), (200, 400), ('PRACP',)),
+  # # Mostly helpful
+  # TaskConfiguration(50, (100, 100), (512, 512), ('PRACS',)),
+  # TaskConfiguration(100, (600, 200), (612, 312), ('PRACS',)),
+  # TaskConfiguration(50, (800, 600), (312, 112), ('PRACS',)),
+  # # Unhelpful
+  # TaskConfiguration(50, (527, 527), (528, 528), ('PRACH',)),
+  # TaskConfiguration(200, (690, 690), (700, 700), ('PRACH',)),
   TaskConfiguration(100, (454, 624), (452, 652), ('PRACH',)),
 ]
 
@@ -59,8 +59,13 @@ EXPERIMENTAL_CONDITIONS_2 = [
  ('6C+4N+6C -StartMid_A', '4N+12C -StartMid_B'),  # -Start vs. -Mid
 ]
 
+# NEUTRAL_EXPERIENCE = '1P+1N+1P+1N+1P+1N+1P+1N ControlP_A'
+# POSITIVE_EXPERIENCE = '1P+1P+1C+1P+1C+1C+1P+1P ControlP_A'
+# NEGATIVE_EXPERIENCE = '1N+1N+1C+1N+1C+1C+1N+1N ControlP_A'
 
-
+NEUTRAL_EXPERIENCE = '1C+1C NEUTRAL_EXPERIENCE'
+POSITIVE_EXPERIENCE = '1P+1P POSITIVE_EXPERIENCE'
+NEGATIVE_EXPERIENCE = '1N+1N NEGATIVE_EXPERIENCE'
 
 
 NR = NEUTRAL_RESOLUTION
@@ -70,29 +75,9 @@ POS_DELTA = 4  # Delta for pure positive conditions
 NEG_DELTA = -1  # Delta for pure negative conditions
 SPLIT_WIDTH = 224  # Grid width for split conditions for id=6 delta=2
 
-def generate_somewhat_positive_conditions():
-    neutral_trials = ['1C'] * 15
-    positive_trials = ['1P'] * 5
-    all_trials = neutral_trials + positive_trials
-    random.shuffle(all_trials)
 
-    conditions_string = '+'.join(all_trials) # => '1N+1N+1N+1N+1N+1N+1P+1N+1N+1P+1P+1N+1N+1N+1P+1N+1N+1P+1N+1N'
-    conditions_string += " ControlN_A"
 
-    return conditions_string
-
-def generate_somewhat_negative_conditions():
-    neutral_trials = ['1C'] * 15
-    positive_trials = ['1N'] * 5
-    all_trials = neutral_trials + positive_trials
-    random.shuffle(all_trials)
-
-    conditions_string = '+'.join(all_trials) # => '1N+1N+1N+1N+1N+1N+1P+1N+1N+1P+1P+1N+1N+1N+1P+1N+1N+1P+1N+1N'
-    conditions_string += " ControlP_A"
-
-    return conditions_string
-
-FRAMING_EXPERIMENT_CONDITIONS = [(generate_somewhat_negative_conditions(), generate_somewhat_positive_conditions())]
+FRAMING_EXPERIMENT_CONDITIONS = [(NEUTRAL_EXPERIENCE, POSITIVE_EXPERIENCE, NEGATIVE_EXPERIENCE)]
 
 def rotate(l,n):
   n = n % len(l)
@@ -124,7 +109,8 @@ def shuffle_conditions(conditions):
   all_conditions = list()
   for condition_pair in conditions:
     condition = [parse_condition(condition_pair[0]),
-                 parse_condition(condition_pair[1])]
+                 parse_condition(condition_pair[1]),
+                 parse_condition(condition_pair[2])]
     random.shuffle(condition)
     all_conditions.append(condition)
   random.shuffle(all_conditions)

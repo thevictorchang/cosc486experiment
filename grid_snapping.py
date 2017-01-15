@@ -328,12 +328,18 @@ class Controller(object):
 
     # Are there real conditions remaining?
     elif len(self._condition) or len(self._conditions):
+
       if len(self._condition):
         # Continue current condition
         config = self._condition.pop(0)
+        #self._logger.WriteLine('EXPERIENCE', config.log_detail[0])
 
-        model_label = ('First Set' if self._condition_count % 2 == 0
-                       else 'Second Set')
+        if self._condition_count == 0:
+            model_label = 'First Set'
+        elif self._condition_count == 1:
+            model_label = 'Second Set'
+        elif self._condition_count == 2:
+            model_label = 'Third Set'
 
         task = TaskScreen(self._window,
                           self._logger,
@@ -353,6 +359,7 @@ class Controller(object):
         if self._condition_count % 2 == 0:
           frame = OnOrOffFrame(self._window, self._logger, "Complete Set", lambda: self.break_screen(), self._subject_id)
           print("Subject_id is: " + str(self._subject_id))
+          print("Config is: " + str(TaskScreen.config))
           # frame = IntraRatingFrame(self._window,
           #                          self._logger,
           #                          'Complete Set',
@@ -360,13 +367,14 @@ class Controller(object):
         else:
           frame = OnOrOffFrame(self._window, self._logger, "Complete Set", lambda: self.break_screen(), self._subject_id)
           print("Subject_id is: " + str(self._subject_id))
+          #print("Config is: " + str(TaskScreen.config(self)))
 
         self._condition = self._conditions.pop(0)
         self._window.navigate_to(frame)
 
     else:
       # Experiment complete; ask for condition rating first
-      frame = OnOrOffFrame(self._window, self._logger, "Complete Set", lambda: self.rating_complete(), self._subject_id)
+      frame = OnOrOffFrame(self._window, self._logger, "Complete Set", lambda: self._complete_callback(), self._subject_id)
       self._window.navigate_to(frame)
     #print self._condition[0].log_detail
 
@@ -374,7 +382,7 @@ class Controller(object):
     frame = BreakFrame(self._window,
                        self._logger,
                        lambda: self.trial_complete(),
-                       7)
+                       2) #change back to 7 when not testing
     self._window.navigate_to(frame)
 
   def rating_complete(self):
