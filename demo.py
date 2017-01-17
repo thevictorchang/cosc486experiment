@@ -9,7 +9,7 @@ import grid_snapping
 from grid_snapping_tasks import (TaskConfiguration,
                                  generate_neutral_conditions,
                                  generate_positive_conditions)
-import logging
+import experiment_logging
 from master import MainWindow, SetupScreen, CompleteFrame
 
 
@@ -64,7 +64,7 @@ def main():
 
   # Callback for WelcomeScreen
   def start_experiment(subject):
-    subject, logger = logging.MakeLogger(subject if subject is not None else None,
+    subject, logger = experiment_logging.MakeLogger(subject if subject is not None else None,
                                          log_dir)
 
     conditions = list()  # List of lists of task configurations
