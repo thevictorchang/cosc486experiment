@@ -43,8 +43,8 @@ PRACTICE_CONDITIONS = [
 TEST_CONDITIONS = [('2C ControlN_A'), ('2P ControlN_B')]
 
 CONTROL_CONDITIONS = [
- ('8C ControlN_A', '8N ControlN_B'),
- ('8P ControlP_A', '8C ControlP_B'),
+ ('8C ControlN_A', '8N ControlN_B')
+ #('8P ControlP_A', '8C ControlP_B'),
 ]
 
 EXPERIMENTAL_CONDITIONS_1 = [

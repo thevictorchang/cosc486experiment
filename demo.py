@@ -44,8 +44,8 @@ def main():
   root = tk.Tk()
   root.tk_setPalette(background='white')
 
-  #root.wm_attributes('-fullscreen', 1)
-  root.geometry('1000x900-0+1')
+  root.wm_attributes('-fullscreen', 1)
+  #root.geometry('1000x900-0+1')
 
   main_window = MainWindow(root)
 

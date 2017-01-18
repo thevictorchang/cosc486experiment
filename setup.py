@@ -3,8 +3,9 @@ import sys
 
 import os
 
-os.environ['TCL_LIBRARY'] = "C:\\Users\\Victor\\AppData\\Local\\Programs\\Python\\Python36-32\\tcl\\tcl8.6"
-os.environ['TK_LIBRARY'] = "C:\\Users\\Victor\\AppData\\Local\\Programs\\Python\\Python36-32\\tcl\\tk8.6"
+os.environ['TCL_LIBRARY'] = "C:\Python36\\tcl\\tcl8.6"
+os.environ['TK_LIBRARY'] = "C:\\Python36\\tcl\\tk8.6"
+
 
 base = None
 

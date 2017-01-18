@@ -18,20 +18,20 @@ NEUTRAL_RESOLUTION = 4
 
 PRACTICE_CONDITIONS = [
   # Neutral
-  # TaskConfiguration(NEUTRAL_RESOLUTION, (100, 100), (500, 500), ('PRACN',)),
-  # TaskConfiguration(NEUTRAL_RESOLUTION, (750, 200), (200, 500), ('PRACN',)),
-  # TaskConfiguration(NEUTRAL_RESOLUTION, (800, 600), (100, 100), ('PRACN',)),
+  TaskConfiguration(NEUTRAL_RESOLUTION, (100, 100), (500, 500), ('PRACN',)),
+  TaskConfiguration(NEUTRAL_RESOLUTION, (750, 200), (200, 500), ('PRACN',)),
+  TaskConfiguration(NEUTRAL_RESOLUTION, (800, 600), (100, 100), ('PRACN',)),
   # # Helpful
-  # TaskConfiguration(50, (250, 300), (600, 500), ('PRACP',)),
-  # TaskConfiguration(100, (1200, 200), (200, 100), ('PRACP',)),
-  # TaskConfiguration(200, (800, 600), (200, 400), ('PRACP',)),
+  TaskConfiguration(50, (250, 300), (600, 500), ('PRACP',)),
+  TaskConfiguration(100, (1200, 200), (200, 100), ('PRACP',)),
+  TaskConfiguration(200, (800, 600), (200, 400), ('PRACP',)),
   # # Mostly helpful
-  # TaskConfiguration(50, (100, 100), (512, 512), ('PRACS',)),
-  # TaskConfiguration(100, (600, 200), (612, 312), ('PRACS',)),
-  # TaskConfiguration(50, (800, 600), (312, 112), ('PRACS',)),
+  TaskConfiguration(50, (100, 100), (512, 512), ('PRACS',)),
+  TaskConfiguration(100, (600, 200), (612, 312), ('PRACS',)),
+  TaskConfiguration(50, (800, 600), (312, 112), ('PRACS',)),
   # # Unhelpful
-  # TaskConfiguration(50, (527, 527), (528, 528), ('PRACH',)),
-  # TaskConfiguration(200, (690, 690), (700, 700), ('PRACH',)),
+  TaskConfiguration(50, (527, 527), (528, 528), ('PRACH',)),
+  TaskConfiguration(200, (690, 690), (700, 700), ('PRACH',)),
   TaskConfiguration(100, (454, 624), (452, 652), ('PRACH',)),
 ]
 
@@ -59,13 +59,13 @@ EXPERIMENTAL_CONDITIONS_2 = [
  ('6C+4N+6C -StartMid_A', '4N+12C -StartMid_B'),  # -Start vs. -Mid
 ]
 
-# NEUTRAL_EXPERIENCE = '1P+1N+1P+1N+1P+1N+1P+1N ControlP_A'
-# POSITIVE_EXPERIENCE = '1P+1P+1C+1P+1C+1C+1P+1P ControlP_A'
-# NEGATIVE_EXPERIENCE = '1N+1N+1C+1N+1C+1C+1N+1N ControlP_A'
+NEUTRAL_EXPERIENCE = '1P+1N+1P+1N+1P+1N+1P+1N ControlP_A'
+POSITIVE_EXPERIENCE = '1P+1P+1C+1P+1C+1C+1P+1P ControlP_A'
+NEGATIVE_EXPERIENCE = '1N+1N+1C+1N+1C+1C+1N+1N ControlP_A'
 
-NEUTRAL_EXPERIENCE = '1C+1C NEUTRAL_EXPERIENCE'
-POSITIVE_EXPERIENCE = '1P+1P POSITIVE_EXPERIENCE'
-NEGATIVE_EXPERIENCE = '1N+1N NEGATIVE_EXPERIENCE'
+# NEUTRAL_EXPERIENCE = '1C+1C NEUTRAL_EXPERIENCE'
+# POSITIVE_EXPERIENCE = '1P+1P POSITIVE_EXPERIENCE'
+# NEGATIVE_EXPERIENCE = '1N+1N NEGATIVE_EXPERIENCE'
 
 
 NR = NEUTRAL_RESOLUTION
@@ -117,15 +117,15 @@ def shuffle_conditions(conditions):
   return all_conditions
 
 def main():
-  os.system('xset m default')
-  os.system("xinput --set-prop "
-            "'Logitech USB Optical Mouse' 'Device Accel Constant Deceleration' 3")
+  #os.system('xset m default')
+  #os.system("xinput --set-prop "
+  #          "'Logitech USB Optical Mouse' 'Device Accel Constant Deceleration' 3")
 
   root = tk.Tk()
   root.tk_setPalette(background='white')
 
-  #root.wm_attributes('-fullscreen', 1)
-  root.geometry('1000x900-0+1')
+  root.wm_attributes('-fullscreen', 1)
+  #root.geometry('1000x900-0+1')
 
   main_window = MainWindow(root)
 
