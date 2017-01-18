@@ -143,12 +143,7 @@ def main():
     # Generate conditions
     conditions = list()  # List of lists of task configurations
     all_conditions = shuffle_conditions(FRAMING_EXPERIMENT_CONDITIONS)
-    if subject % 2 == 0:
-        print("participant is EVEN NUMBER, and will get POSITIVE FRAMING")
-       #all_conditions.extend(shuffle_conditions(EXPERIMENTAL_CONDITIONS_1))
-    else:
-        print("participant is ODD NUMBER, and will get NEGATIVE FRAMING")
-       #all_conditions.extend(shuffle_conditions(EXPERIMENTAL_CONDITIONS_2))
+
     
     for condition in all_conditions:
       conditions.extend(condition)

@@ -99,17 +99,8 @@ class OnOrOffFrame(tk.Frame):
     wrap_frame = tk.Frame(self, pady=10)
 
     if (subject_id % 2 == 0):
+        print("POSITIVE FRAMING")
 
-        tk.Radiobutton(wrap_frame,
-                       text='Yes',
-                       variable=self._pos_neg,
-                       value=1,
-                       padx=10).pack(side=tk.LEFT)
-        tk.Radiobutton(wrap_frame,
-                       text='No',
-                       variable=self._pos_neg,
-                       value=0).pack(side=tk.LEFT)
-    else:
         tk.Radiobutton(wrap_frame,
                        text='Yes',
                        variable=self._pos_neg,
@@ -119,6 +110,17 @@ class OnOrOffFrame(tk.Frame):
                        text='No',
                        variable=self._pos_neg,
                        value=1).pack(side=tk.LEFT)
+    else:
+        print("NEGATIVE FRAMING")
+        tk.Radiobutton(wrap_frame,
+                       text='Yes',
+                       variable=self._pos_neg,
+                       value=1,
+                       padx=10).pack(side=tk.LEFT)
+        tk.Radiobutton(wrap_frame,
+                       text='No',
+                       variable=self._pos_neg,
+                       value=0).pack(side=tk.LEFT)
 
 
     wrap_frame.pack()
@@ -141,10 +143,14 @@ class OnOrOffFrame(tk.Frame):
 
   def _continue_clicked(self):
     #print('PREFERENCE' + str(self._pos_neg.get()))
-    if (self._pos_neg.get == 0):
+
+    print("pos_neg.get is: " + str(self._pos_neg.get()))
+    if (self._pos_neg.get() == 0):
       self._logger.WriteLine('PREFERENCE', 'ON')
+      print("PREFERENCE: ON")
     else:
-        self._logger.WriteLine('PREFERENCE', 'OFF')
+      self._logger.WriteLine('PREFERENCE', 'OFF')
+      print("PREFERENCE: OFF")
     self._continue_callback()
 
 
@@ -198,6 +204,7 @@ class InterRatingFrame(tk.Frame):
     self._next.config(state=tk.NORMAL)
 
   def _continue_clicked(self):
+    print("pos_neg.get is: " + self._pos_neg.get)
     if (self._pos_neg.get == 0):
       self._logger.WriteLine('PREFERENCE', 'ON')
     else:

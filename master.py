@@ -1,6 +1,6 @@
 import tkinter as tk
 import sys
-from screeninfo import get_monitors
+#from screeninfo import get_monitors
 
 class MainWindow(tk.Frame):
   """Master window that contains all experimental screens."""
@@ -22,15 +22,15 @@ class SetupScreen(tk.Frame):
     assert next_callback is not None
     self._next_callback = next_callback
 
-    if self._check_entry_condition():
+    #if self._check_entry_condition():
       #participant meets entry conditions (so far just screen resolution of 1080)
-      next = tk.Button(self, text='Start Practice', state='normal')
-      next.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
-      next.bind('<Button-1>', lambda e: self._next_clicked(e))
-    else:
-      message = tk.Label(self, text="Your screen resolution doesn't meet the requirements for this experiment. \n"
-                                    "Please connect to a 1080p monitor.")
-      message.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
+    next = tk.Button(self, text='Start Practice', state='normal')
+    next.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
+    next.bind('<Button-1>', lambda e: self._next_clicked(e))
+    # else:
+    #   message = tk.Label(self, text="Your screen resolution doesn't meet the requirements for this experiment. \n"
+    #                                 "Please connect to a 1080p monitor.")
+    #   message.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
 
     #self._entry = tk.Entry(self, width=5)
     #self._entry.place(in_=next, relx=0.5, anchor=tk.S)
